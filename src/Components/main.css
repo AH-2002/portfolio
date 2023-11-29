@@ -1,0 +1,141 @@
+.main{
+    height: 100vh;
+    background-image: url('../Images/pinterest.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.638);
+    z-index: -1;
+}
+.main-info{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.main-info p
+{
+  background-image: linear-gradient(
+    -225deg,
+    #a6a6a6 0%,
+     #676767 50%,
+     rgb(14, 156, 167) 60%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.main-info h2{
+    color: white;
+    font-size: 35px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.main-info p{
+    font-size: 65px;
+    z-index: 10;
+    color: white;
+    margin-bottom: 35px;
+}
+.hireBtn{
+    z-index: 1000;
+}
+.hireBtn a{
+    border: 2px solid #20c997;
+    background-color: transparent;
+    color: #20c997 !important;
+    padding: .8rem 2.6rem;
+    font-weight: 500;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.hireBtn a:hover{
+    background-color: #20c997 !important;
+    color: white !important;
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+        /* main */
+        .main{
+            background-size: cover;
+            background-position: bottom right;
+        }
+        .main-info h2{
+            font-size: 25px;
+        }
+        .main-info p{
+            font-size: 30px;
+        }
+        /* main */
+        /* about, services, resume */
+        .about-me, .resume, .portfolio, .contact{
+            padding: 60px 0px !important;
+        }
+        .about-info{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .about-me{
+            height: auto !important;
+        }
+        .t-24{
+            visibility: hidden;
+        }
+        .services-info .justify-content-between, .resume .justify-content-between{
+            justify-content: center !important;
+        }
+        .resume-info{
+            flex-direction: column;
+            text-align: center;
+        }
+        /* about, services, resume */
+        /* Contact */
+        .contact-form{
+            margin-top: 30px;
+        }
+        .contact-form form textarea{
+            height: 100px !important;
+        }
+        /* Contact */
+        
+}
+@media screen and (max-width: 992px){
+    .services .card{
+        margin: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    .about-info{
+        text-align: start;
+    }
+    .resume-info{
+        flex-wrap: wrap !important;
+    }
+}

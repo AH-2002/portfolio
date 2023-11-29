@@ -1,0 +1,117 @@
+.contact{
+    background-color: #343a40;
+    padding: 100px 0px;
+    
+}
+.contact .container{
+    height: 100%;
+}
+.contact .contact-main{
+    height: 100%;
+    align-items: center;
+    margin-top: 80px;
+}
+.contact .contact-info{
+    justify-content: space-between;
+}
+.contact-form form input, .contact-form form textarea{
+    background-color: rgb(33, 37, 41);
+    border-color: transparent;
+}
+.contact-form form input{
+    margin-bottom: 25px;
+    padding: 13px 10px;
+    color: rgba(255, 255, 255, 0.495);
+}
+.contact-form form textarea{
+    height: 200px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.495);
+}
+.contact-form form input::placeholder, .contact-form form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+.contact-form form input:focus, .contact-form form textarea:focus{
+    background-color: rgb(33, 37, 41);
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.495);
+}
+.contact-form form button{
+    color: white;
+    background-color: #20c997;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+.contact-form form button:hover{
+    background-color: #179871;
+}
+.contact ul{
+    padding: 0;
+}
+.contact ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.contact ul a{
+    text-decoration: none;
+    color: white;
+
+}
+.contact-icon{
+    margin-right: 8px;
+    color: #20c997;
+    font-size: 18px;
+}
+.follow-links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    margin-right: 35px;
+    position: relative;
+    transition: 0.5s ease;
+}
+.follow-links .facebook:hover{
+    color: blue;
+}
+.follow-links .twitter:hover{
+    color: aquamarine;
+}
+.follow-links .linkedin:hover{
+    color: #0077b5;
+}
+.follow-links .github:hover{
+    color: #343a40;
+}
+.follow-links .icon-hover{
+    position: absolute;
+    font-size: 14px;
+    left: -10px;
+    bottom: -65px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;   
+    color: white; 
+}
+.follow-links a:hover .icon-hover{
+    visibility: visible;
+    opacity: 1;
+    bottom: -50px;
+}
+
+.contact .contact-form{
+    position: relative;
+}
+.successMsg{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    color: rgb(72, 255, 72);
+}
+.contact .contact-bg{
+    margin-bottom: 40px;
+}

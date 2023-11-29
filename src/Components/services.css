@@ -1,0 +1,32 @@
+.services{
+    padding: 80px 0px 70px 0px;
+    background-color: #343a40;
+}
+.services-info{
+    padding-top: 150px;
+}
+
+.services .card{
+        background-color: transparent;
+        color: rgb(164, 164, 164);
+        
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 15px;
+        transition: 0.7s ease;
+}
+.services .card .icon {
+    color: rgb(28, 28, 28);
+    font-size: 8em;
+    text-align: center;
+}
+.services .card:hover {
+    transform: scale(1.1);
+}
+.services-info .card{
+    text-align: center;
+}
+.services-info .card img{
+    width: 120px;
+}

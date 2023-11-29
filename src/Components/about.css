@@ -1,0 +1,70 @@
+.about-me{
+    height: 100vh;
+    padding: 100px 0px;
+}
+.about-me .container{
+    height: 100%;
+}
+.about-me .about-info{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.back-h2{
+    text-align: center;
+    position: relative;
+}
+
+.back-h2 h2{
+    text-align: center;
+    display: inline;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #20c997;
+}
+
+.about-me .personal-info span{
+    color: #20c997;
+}
+.about-me .personal-info p{
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.about-me .InfoCategories h4{
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+}
+.about-me .InfoCategories h4:last-child{
+    border: none;
+}
+.about-me .InfoCategories h4 span{
+    font-size: 17px;
+}
+.about-me .InfoCategories h4 a{
+    text-decoration: none;
+    color: #20c997;
+    transition: 0.5s ease;
+}
+.about-me .InfoCategories h4 a:hover{
+    color: #18936e;
+}
+.cvBtn{
+    margin-top: 30px;
+}
+.t-24{
+    font-size: calc(1.95rem + 8.4vw);
+    color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -120px;
+    user-select: none;
+    text-align: center;
+    opacity: 0.1;
+}
+
